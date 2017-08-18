@@ -21,9 +21,6 @@ function handleError(error) {
       token = res.token;
       initializeSession();
     }).catch(handleError);
-  
-
-initializeSession();
 
 function initializeSession() {
   var session = OT.initSession(apiKey, sessionId);
